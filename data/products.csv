@@ -1,0 +1,33 @@
+product_id,product_name,category_id,unit_price,unit_cost
+1,Milk 1L,1,480,381.0
+2,Kefir 1L,1,450,319.0
+3,Butter 180g,1,1250,1018.0
+4,Yogurt 350g,1,390,302.0
+5,White bread,2,160,100.0
+6,Lavash,2,230,194.0
+7,Croissant,2,320,253.0
+8,Samsa,2,450,358.0
+9,Water 1.5L,3,190,120.0
+10,Black tea 100 bags,3,1350,962.0
+11,Cola 1.5L,3,520,360.0
+12,Orange juice 1L,3,780,649.0
+13,Potato chips 140g,4,780,594.0
+14,Salted nuts 150g,4,990,798.0
+15,Crackers 200g,4,430,306.0
+16,Sunflower seeds 300g,4,520,342.0
+17,Chicken breast 1kg,5,2400,1773.0
+18,Beef 1kg,5,4300,2649.0
+19,Sausage 400g,5,1650,1331.0
+20,Eggs (10 pcs),5,780,591.0
+21,Potatoes 1kg,6,260,205.0
+22,Onions 1kg,6,190,131.0
+23,Tomatoes 1kg,6,690,581.0
+24,Apples 1kg,6,590,486.0
+25,Dish soap 500ml,7,650,516.0
+26,Laundry powder 3kg,7,2900,1881.0
+27,Toilet paper (8 rolls),7,1450,1039.0
+28,Trash bags (30 pcs),7,520,318.0
+29,Chocolate bar 90g,8,540,345.0
+30,Candy mix 500g,8,1350,1041.0
+31,Cookies 300g,8,580,456.0
+32,Honey 500g,8,2400,2021.0
