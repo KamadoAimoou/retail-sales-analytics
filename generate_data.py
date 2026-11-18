@@ -56,7 +56,7 @@ customers = pd.DataFrame({
 cust_weight = rng.lognormal(0, 0.9, N_CUST)
 cust_weight /= cust_weight.sum()
 
-# ---------- how many orders per day ----------
+# how many orders per day
 days = pd.date_range("2025-01-01", "2025-12-31")
 month_mult = {1: .92, 2: .95, 3: 1.12, 4: .98, 5: 1.0, 6: .97,
               7: .93, 8: .95, 9: 1.02, 10: 1.0, 11: 1.05, 12: 1.25}   # March = Nauryz, Dec = New Year
@@ -64,14 +64,14 @@ dow_mult = {0: .85, 1: .85, 2: .9, 3: .95, 4: 1.1, 5: 1.35, 6: 1.25}  # weekends
 lam = [14 * month_mult[d.month] * dow_mult[d.dayofweek] for d in days]
 orders_per_day = rng.poisson(lam)
 
-# ---------- popularity of products and hours ----------
+# popularity of products and hours
 pop = 1 / products["unit_price"].to_numpy() ** 0.55      # cheap items are bought more often
 pop /= pop.sum()
 hour_p = np.array([0]*8 + [1, 3, 5, 6, 6, 5, 4, 5, 7, 9, 10, 8, 4] + [0]*3, dtype=float)
 hour_p /= hour_p.sum()
 payments = ["Kaspi QR", "Card", "Cash"]
 
-# ---------- orders and order_items ----------
+# orders and order_items
 order_rows, item_rows = [], []
 order_id = 0
 for day, n in zip(days, orders_per_day):
